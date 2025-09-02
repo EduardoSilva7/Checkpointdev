@@ -34,7 +34,12 @@ Este repositório atende aos requisitos do **1º Checkpoint – 2º Semestre: Do
 
 ## Como usar (no terminal)
 
-1. Abra no VS Code ou copie o projeto para a VM.  
+1. Conecte-se na VM e clone o repositório:  
+   ```bash
+   ssh admlnx@vm-linux-free
+   git clone https://github.com/EduardoSilva7/Checkpointdev
+   cd Checkpointdev
+   ```
 2. Construa e suba os serviços:  
    ```bash
    docker-compose up --build -d
@@ -47,9 +52,24 @@ Este repositório atende aos requisitos do **1º Checkpoint – 2º Semestre: Do
 
 ---
 
+## Conectar no banco de dados MySQL
+
+Para abrir o cliente MySQL interativo dentro do container:  
+```bash
+docker exec -it mysql_db mysql -u dimdim -pdimdimpass -D dimdimdb
+```
+
+Depois disso, você pode executar comandos SQL manualmente, como:  
+```sql
+SHOW TABLES;
+SELECT * FROM users;
+```
+
+---
+
 ## CRUD no banco usando `docker exec`
 
-Todas as operações devem ser feitas diretamente dentro do container do MySQL.  
+Todas as operações podem ser executadas diretamente pelo `docker exec` sem abrir o cliente.  
 - Usuário: **dimdim**  
 - Senha: **dimdimpass**  
 - Banco: **dimdimdb**  
@@ -87,7 +107,9 @@ DELETE FROM users WHERE nome='Eduardo';
 SELECT * FROM users;
 "
 ```
-
+```bash
+Outra opção de visualização: http://172.191.51.122:8080/users
+```
 ---
 
 ## Logs da aplicação
