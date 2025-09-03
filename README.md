@@ -106,9 +106,6 @@ DELETE FROM users WHERE nome='Eduardo';
 SELECT * FROM users;
 "
 ```
-```bash
-Outra opção de visualização: http://172.191.51.122:8080/users
-```
 ---
 
 ## Logs da aplicação
