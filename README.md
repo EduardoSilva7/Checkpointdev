@@ -36,7 +36,7 @@ Projeto pronto para abrir no VS Code e rodar com Docker Compose.
 1. Conecte-se na VM e clone o repositório:  
    ```bash
    git clone https://github.com/EduardoSilva7/Checkpointdev
-   cd Checkpointdev
+   cd Checkpoint
    ```
 2. Construa e suba os serviços:  
    ```bash
