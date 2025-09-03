@@ -46,7 +46,7 @@ Projeto pronto para abrir no VS Code e rodar com Docker Compose.
 3. Verifique os logs:  
    ```bash
    docker-compose logs -f app
-   docker logs -f dimdim-db
+   docker logs -f mysql_db
    ```
 
 ---
