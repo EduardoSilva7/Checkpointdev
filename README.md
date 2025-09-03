@@ -1,7 +1,6 @@
 # DimDim - Docker Compose Project (Spring Boot + MySQL)
 
 Projeto pronto para abrir no VS Code e rodar com Docker Compose.  
-Este repositório atende aos requisitos do **1º Checkpoint – 2º Semestre: Docker Compose (FIAP)**.
 
 ---
 
@@ -36,7 +35,6 @@ Este repositório atende aos requisitos do **1º Checkpoint – 2º Semestre: Do
 
 1. Conecte-se na VM e clone o repositório:  
    ```bash
-   ssh admlnx@vm-linux-free
    git clone https://github.com/EduardoSilva7/Checkpointdev
    cd Checkpointdev
    ```
